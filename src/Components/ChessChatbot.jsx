@@ -18,7 +18,7 @@ function ChessBotApp() {
 
     const handleEnter = (e) => {
         if (e.key == "Enter") {
-            handleQuery()
+            handleQuery(query)
         }
     }
 
@@ -109,7 +109,7 @@ function ChessBotApp() {
                         placeholder="Ask a chess-related question"
                         onKeyPress={(e) => handleEnter(e)}
                     />
-                    <Button size='lg' colorScheme='blue' onClick={handleQuery}>ASK</Button>
+                    <Button size='lg' colorScheme='blue' onClick={(e)=>handleQuery(query)}>ASK</Button>
                 </Flex>
             </Center>
         </Box>
